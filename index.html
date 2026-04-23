@@ -10,7 +10,6 @@
     <header>
         <h1>LA NACION</h1>
         <p><strong>Sección:</strong> Economía</p>
-        <hr>
     </header>
 
     <main>
@@ -58,10 +57,56 @@
                 <p>El Estado de Nevada concluyó que Resorts World operó con “métodos inadecuados”, se impuso un acuerdo millonario y lo obligó a reformar por completo su sistema de control.</p>
             </section>
         </article>
+
+        <section>
+            <hr>
+            <h2>Encuesta de Satisfacción (100% Democrática)</h2>
+            <form action="#" method="GET">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <label for="nombre">Nombre (Obligatorio):</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com"><br><br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>¿Qué te pareció la noticia?</legend>
+                    
+                    <input type="radio" id="opcion1" name="opinion" value="excelente" checked>
+                    <label for="opcion1">Excelente, periodismo de verdad.</label><br>
+
+                    <input type="radio" id="opcion2" name="opinion" value="mala" disabled>
+                    <label for="opcion2">No me gustó (Opción en mantenimiento).</label><br>
+
+                    <input type="radio" id="opcion3" name="opinion" value="me_encanto">
+                    <label for="opcion3">Pésima, me aburrió. (Pero igual la recomiendo).</label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Comentarios adicionales</legend>
+                    
+                    <label for="elogios">Elogios para el autor:</label><br>
+                    <input type="text" id="elogios" name="elogios" value="¡Qué buena nota!" readonly><br><br>
+
+                    <label for="quejas">Escribe aquí tus quejas (Máximo 0 caracteres):</label><br>
+                    <textarea id="quejas" name="quejas" rows="4" cols="50" maxlength="0" placeholder="Intenta quejarte si puedes..."></textarea>
+                </fieldset>
+                <br>
+                
+                <input type="checkbox" id="acepto" name="acepto" required>
+                <label for="acepto">Juro solemnemente que esta noticia cambió mi vida.</label><br><br>
+
+                <button type="submit">Enviar mi opinión muy positiva</button>
+                <button type="reset">Borrar todo</button>
+            </form>
+            <hr>
+        </section>
+
     </main>
 
     <footer>
-        <hr>
         <p><small>&copy; 2026 LA NACION. Todos los derechos reservados. Trabajo práctico - Desarrollo y Arquitecturas Web.</small></p>
     </footer>
 
